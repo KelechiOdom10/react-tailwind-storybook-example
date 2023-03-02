@@ -1,7 +1,8 @@
-import { FC, HTMLAttributes } from "react";
-import { VariantType } from "./Button";
+import { AnchorHTMLAttributes, FC } from "react";
+import { VariantType, buttonStyles } from "./button";
 
-export type ButtonLinkProps = HTMLAttributes<HTMLAnchorElement> & VariantType;
+export type ButtonLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> &
+  VariantType;
 
 export const ButtonLink: FC<ButtonLinkProps> = ({
   children,
